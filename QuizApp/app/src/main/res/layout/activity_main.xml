@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back222"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Welcome to the best Quiz"
+            android:textAlignment="center"
+            android:textColor="#E91E63"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="You need to answer five questions"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#E91E63"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Question 1: What color is the cape of Superman?"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#EF6C00"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="Red"
+                    android:textColor="#F44336" />
+
+                <RadioButton
+                    android:id="@+id/radio_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="Blue"
+                    android:textColor="#2196F3" />
+
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="Yellow"
+                    android:textColor="#FFEB3B" />
+
+                <RadioButton
+                    android:id="@+id/radio_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="Grey"
+                    android:textColor="#9E9E9E" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Question 2 : Why Greece is wonderful?"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#EF6C00"
+            android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/Relative_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#a4b7d4">
+        <View
+            android:id="@+id/centerShim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+            <RelativeLayout
+                android:id="@+id/Relative_Layout_inside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/centerShim">
+            <CheckBox
+                android:id="@+id/checkbox1_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Weather"
+                android:textColor="#F9A825"
+                android:textSize="18sp"/>
+            <CheckBox
+                android:id="@+id/checkbox2_naturalbeauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox1_weather"
+                android:layout_margin="8dp"
+                android:text="Natural beauty"
+                android:textColor="#F9A825"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox3_Food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox2_naturalbeauty"
+                android:layout_margin="8dp"
+                android:text="Food"
+                android:textColor="#F9A825"
+                android:textSize="18sp"/>
+            <CheckBox
+                android:id="@+id/checkbox4_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox3_Food"
+                android:layout_margin="8dp"
+                android:text="Music"
+                android:textColor="#F9A825"
+                android:textSize="18sp"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/centerShim">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/greece"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Question 3 : When was the last Olympic games that took place in Greece?"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#EF6C00"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/question3_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter only the year"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Question 4 : What does Nani means in Japanese?"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#EF6C00"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioAnswers2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#45556e"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Food"
+                android:textColor="#F57F17"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Love"
+                android:textColor="#F57F17"/>
+            <RadioButton
+                android:id="@+id/nani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="What?"
+                android:textColor="#F57F17"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Question 5: Do you think you did good?"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#EF6C00"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/last_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5f7391"
+            android:hint="Please answer Yes or No"
+            android:textColorHint="#FFFFFF"
+            android:inputType="text"
+            android:textColor="#FFFFFF"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="When you are ready,press the icon for the score!"
+                android:textColor="#EF6C00"/>
+
+        <ImageButton
+            android:id="@+id/submit_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/message"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/submit"
+            android:onClick="getScore"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
