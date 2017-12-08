@@ -69,6 +69,7 @@
                     android:layout_weight="1"
                     android:background="@android:color/white"
                     android:text="Blue"
+                    android:checked="true"
                     android:textColor="#2196F3" />
 
                 <RadioButton
@@ -127,7 +128,8 @@
                 android:layout_margin="8dp"
                 android:text="Weather"
                 android:textColor="#F9A825"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:checked="true"/>
             <CheckBox
                 android:id="@+id/checkbox2_naturalbeauty"
                 android:layout_width="wrap_content"
@@ -216,7 +218,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Food"
-                android:textColor="#F57F17"/>
+                android:textColor="#F57F17" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
